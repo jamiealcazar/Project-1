@@ -1,6 +1,31 @@
 $(() => {
+    const $openBtn = $('#openModal');
+
+    // Grabbing modal element
+    const $modal = $('#modal');
+
+    // Grabbing close button
+    const $closeBtn = $('#close');
+
+    const openModal = () => { // created function openModal
+      $modal.css('display', 'block')
+
+    }
+
+    const closeModal = () => {
+      $modal.css('display', 'none')
+
+    }
+    $openBtn.on('click', openModal)
+    $closeBtn.on('click', closeModal)
+
+
+
+
+
     $('form').on('submit', (e) => {
       e.preventDefault()
+
 
   	const userInput = $('input[type="text"]').val()
 
@@ -24,16 +49,14 @@ $(() => {
 							console.log(hitsArray[i].result.title);
 							const $printData = $('<p>').text(hitsArray[i].result.title)
 							$('body').append($printData);
+
+
+
 						}
 
-					})
 				})
-		})
-
-
-
-
-
+    })
+})
 
 
 
