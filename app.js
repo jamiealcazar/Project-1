@@ -55,20 +55,3 @@ $(() => {
 				})
     })
 })
-
-
-
-			// const settings = {
-			// "async": true,
-			// "crossDomain": true,
-			// "url": "https://genius.p.rapidapi.com/search?q=HarryStyles",
-			// "method": "GET",
-			// "headers": {
-			// "x-rapidapi-host": "genius.p.rapidapi.com",
-			// "x-rapidapi-key": "7fa60ae3admsh0d5b06c183ee1cep162fe2jsn4ee4252670d1"
-			// }
-			// };
-			//
-			// $.ajax(settings).done(function (response) {
-			// console.log(response);
-			// });
